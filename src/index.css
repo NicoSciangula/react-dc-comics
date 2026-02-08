@@ -50,13 +50,14 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .container-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 8rem 0 8rem;
-  padding-top: 0.5rem;
+  padding-top: 1.2rem;
   padding-bottom: 0.5rem;
 }
 .product-card {
@@ -81,4 +82,15 @@ main {
   color: white;
   font-size: 10px;
   font-weight: bolder;
+}
+
+/*? Span con Position Absolute */
+.positioning {
+  position: absolute;
+  padding: .5rem 2rem .5rem 2rem;
+  background-color: rgb(2, 130, 249);
+  color: white;
+  font-weight: bolder;
+  left: 14%;
+  bottom: 96%;
 }
