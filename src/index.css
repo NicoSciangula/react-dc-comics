@@ -17,8 +17,8 @@ body {
   margin-bottom: 1.2rem;
 }
 #main-logo {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 90px;
+  max-height: 90px;
 }
 
 .nav-bar {
@@ -31,7 +31,8 @@ body {
 }
 .nav-bar li a {
   text-decoration: none;
-  color: black;
+  color: rgb(70, 70, 70);
+  font-weight: bolder;
 }
 
 /*? JUMBOTRON */
@@ -39,4 +40,45 @@ body {
   background-image: url(/public/jumbotron.jpg);
   height: 350px;
   background-size: cover;
+}
+
+/*? MAIN and ProductList  */
+main {
+  background-color: rgb(28, 28, 28);
+}
+#product {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 8rem 0 8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.product-card {
+  margin: 1rem;
+  max-width: 150px;
+}
+.product-card img {
+  width: 150px;
+  height: 150px;
+}
+.product-card p {
+  color: white;
+  padding-top: 0.5rem;
+  font-size: 12px;
+}
+
+.btn {
+  background-color: rgb(2, 130, 249);
+  border: none;
+  padding: 1em 3.5em 1em 3.5em;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  font-weight: bolder;
 }
