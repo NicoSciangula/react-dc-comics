@@ -4,6 +4,7 @@ export default function ProductList() {
   return (
     <>
       <section id="product">
+        <span className="positioning">CURRENT SERIES</span>
         <div className="container-wrap">
           {comics.map((comic) => (
             <article key={comic.id} className="product-card">
