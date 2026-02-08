@@ -1,8 +1,11 @@
+import NavBar from "./NavBar";
+
 export default function Header() {
   return (
     <header>
-      <section>
-        <img src="/dc-logo.png" alt="DC Comics Logo" />
+      <section className="container-header">
+        <img src="/dc-logo.png" alt="DC Comics Logo" id="main-logo" />
+        <NavBar />
       </section>
     </header>
   );
