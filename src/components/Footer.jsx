@@ -1,3 +1,5 @@
+import SocialFooter from "./SocialFooter";
+
 const dcComics = [
   {
     id: 1,
@@ -135,6 +137,7 @@ export default function Footer() {
         </div>
         <div className="dc-bg"></div>
       </section>
+      <SocialFooter />
     </footer>
   );
 }
