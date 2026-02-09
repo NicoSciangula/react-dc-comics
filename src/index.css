@@ -28,11 +28,32 @@ body {
 }
 .nav-bar li {
   padding-right: 1rem;
+  position: relative;
+  transition: all 0.5s;
 }
 .nav-bar li a {
   text-decoration: none;
   color: rgb(70, 70, 70);
   font-weight: bolder;
+}
+
+.nav-bar li::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 0;
+  background-color: rgb(2, 130, 249);
+  bottom: -25px;
+  transition: width 0.3s ease;
+}
+
+.nav-bar li:hover::before {
+  width: 100%;
+}
+
+.nav-bar li :hover {
+  color: rgb(2, 130, 249);
 }
 
 /*? JUMBOTRON */
