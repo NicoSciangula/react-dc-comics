@@ -129,11 +129,11 @@ export default function Footer() {
       <section className="container-footer">
         <div className="list-container">
           <ul>{generateList(dcComics)}</ul>
-          <ul>{generateList(shop)}</ul>
           <ul>{generateList(dc)}</ul>
           <ul>{generateList(sites)}</ul>
+          <ul>{generateList(shop)}</ul>
         </div>
-        <div></div>
+        <div className="dc-bg"></div>
       </section>
     </footer>
   );
@@ -142,7 +142,9 @@ export default function Footer() {
 function generateList(arg) {
   {
     return arg.map((e) => (
-      <li key={e.id}>{e.title ? <h2 className="title-list">{e.title}</h2> : e.name}</li>
+      <li key={e.id}>
+        {e.title ? <h2 className="title-list">{e.title}</h2> : e.name}
+      </li>
     ));
   }
 }
