@@ -7,7 +7,9 @@ export default function ProductList() {
       <section id="product">
         <span className="positioning">CURRENT SERIES</span>
         <div className="container-wrap">
-          <ProductCard items={comics}/>
+          {comics.map((singleItems) => (
+            <ProductCard items={singleItems} key={singleItems.id} />
+          ))}
         </div>
         <button className="btn">LOAD MORE</button>
       </section>
