@@ -130,10 +130,12 @@ export default function Footer() {
     <footer>
       <section className="container-footer">
         <div className="list-container">
-          <ul>{generateList(dcComics)}</ul>
+          <ul>
+            {generateList(dcComics)}
+            {generateList(shop)}
+          </ul>
           <ul>{generateList(dc)}</ul>
           <ul>{generateList(sites)}</ul>
-          <ul>{generateList(shop)}</ul>
         </div>
         <div className="dc-bg"></div>
       </section>
