@@ -88,7 +88,7 @@ main {
 }
 .product-card img {
   width: 150px;
-  height: 150px;
+  height: 180px;
 }
 .product-card p {
   color: white;
@@ -161,6 +161,7 @@ main {
   flex-wrap: wrap;
   max-width: 450px;
   align-items: flex-start;
+  padding: 1rem;
 }
 .list-container ul {
   list-style: none;
@@ -176,14 +177,16 @@ main {
   color: white;
   font-weight: bolder;
   font-size: 1.5rem;
-  padding-bottom: 0.5rem;
+  padding: 1rem 0 1rem 0;
 }
 
 .dc-bg {
   background-image: url(/dc-logo-bg.png);
-  width: 563px;
+  width: 600px;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  padding: 3rem 0;
 }
 
 /*? Social Footer  */
