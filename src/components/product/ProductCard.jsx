@@ -1,12 +1,8 @@
-export default function ProductCard({items}) {
+export default function ProductCard({ items }) {
   return (
-    <>
-      {items.map((singleItem) => (
-        <article key={singleItem.id} className="product-card">
-          <img src={singleItem.thumb} alt={singleItem.description} />
-          <p>{singleItem.series.toUpperCase()}</p>
-        </article>
-      ))}
-    </>
+    <article className="product-card">
+      <img src={items.thumb} alt={items.description} />
+      <p>{items.series.toUpperCase()}</p>
+    </article>
   );
 }
